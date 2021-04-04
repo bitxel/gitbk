@@ -1,0 +1,14 @@
+[global]
+backup_interval = "10s"
+log_level = 0
+test = 1
+message = "auto commit"
+
+[global.auth]
+method = "public_keys"
+pem_file_path = "~/.ssh/id_rsa"
+#auth.private_key_password = ""
+
+[[project]]
+URL = "git@github.com:bitxel/bk-test.git"
+WorkDir = "/tmp/bk-test"
